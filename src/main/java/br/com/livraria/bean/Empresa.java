@@ -1,5 +1,6 @@
 package br.com.livraria.bean;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.Entity;
@@ -25,6 +26,9 @@ public class Empresa {
 			mappedBy = "empresa")
 	private List<Funcionario> funcionarios;
 	
+	public Empresa() {
+		this.funcionarios = new ArrayList<Funcionario>();
+	}
 	
 	public Integer getId() {
 		return id;
