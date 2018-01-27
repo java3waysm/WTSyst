@@ -9,13 +9,6 @@ import javax.persistence.ManyToMany;
 @Entity
 public class Aluno {
 
-	
-	/*
-	 * 
-	 * comitando
-	 * teste
-	 * 
-	 * */
 	@Id
 	private Integer id;
 	
